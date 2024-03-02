@@ -1,0 +1,156 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('background.png'); /* Set background image */
+    background-repeat: repeat; /* Make the background repeat */
+    background-position: center; /* Center the background image */
+    background-size: contain; /* Adjust background size */
+    color: #0B2C3B;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #0B2C3B;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    margin-top: -50px;
+    margin-bottom: 15px;
+}
+
+#logo img {
+    display: block;
+    margin: 0 auto; /* Center the logo horizontally */
+    width: 200px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: -100px;
+    margin-bottom: -50px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #0B2C3B;
+    margin-top: 20px;
+}
+
+#calculatorContainer {
+    width: 100%;
+    max-width: 600px;
+    background-color: #D68C2B;
+    border-radius: 8px;
+    border: 5px solid #0B2C3B;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: -50px; 
+}
+
+#salarySection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#salarySection label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #0B2C3B;
+}
+
+#salarySection input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #0B2C3B;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#salaryTypeRadio {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#salaryTypeRadio label {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #0B2C3B;
+}
+
+#calculateTaxButton {
+    display: block;
+    margin: 0 auto;
+    background-color: #0B2C3B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#calculateTaxButton:hover {
+    background-color: #206e92;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* For screens smaller than 600px (typical smartphones) */
+@media (max-width: 600px) {
+    #calculatorContainer {
+        width: 90%; /* Adjust container width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    #salarySection input {
+        font-size: 12px; /* Adjust input font size for smaller screens */
+    }
+
+    #salaryTypeRadio label {
+        font-size: 12px; /* Adjust radio button label font size for smaller screens */
+    }
+
+    #calculateTaxButton {
+        font-size: 14px; /* Adjust button font size for smaller screens */
+    }
+}
+
+/* For screens larger than 600px (typical tablets and desktops) */
+@media (min-width: 601px) {
+    #calculatorContainer {
+        padding: 20px; /* Restore padding for larger screens */
+    }
+
+    #salarySection input {
+        font-size: 14px; /* Restore input font size for larger screens */
+    }
+
+    #salaryTypeRadio label {
+        font-size: 14px; /* Restore radio button label font size for larger screens */
+    }
+
+    #calculateTaxButton {
+        font-size: 16px; /* Restore button font size for larger screens */
+    }
+}

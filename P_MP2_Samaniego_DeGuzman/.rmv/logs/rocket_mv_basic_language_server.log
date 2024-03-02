@@ -1,0 +1,36 @@
+2024-02-25 22:34:37.827 [main] INFO  com.rs.mv.mvvs.Startup - [LSP:100101]ROCKET MV BASIC EXTENSION to start
+2024-02-25 22:34:37.848 [main] INFO  com.rs.mv.mvvs.lsp.server.BasicLanguageServerLauncher - [LSP:100102]start pip server
+2024-02-25 22:34:37.945 [main] INFO  com.rs.mv.mvvs.lsp.server.BasicLanguageServerLauncher - [LSP:100103]ROCKET MV BASIC EXTENSION start successful
+2024-02-25 22:34:37.999 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.workspace.WorkspaceManager - [workspace:200101]load all workspace folders start
+2024-02-25 22:34:38.001 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.workspace.WorkspaceManager - [workspace:20010201]root uri: file:///c%3A/xampp/htdocs/inbetween
+2024-02-25 22:34:38.001 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.workspace.handler.FolderHandler - [workspace:200103]workspace contains workspace folder: file:///c%3A/xampp/htdocs/inbetween
+2024-02-25 22:34:38.017 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.workspace.handler.FolderHandler - [workspace:200104]workspace folder will be cached: file:///c%3A/xampp/htdocs/inbetween
+2024-02-25 22:34:38.018 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.Config - [framework:30010101]config load start
+2024-02-25 22:34:38.018 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.Config - [framework:30010102]project config path is : C:/xampp/htdocs/inbetween/.rmv/config
+2024-02-25 22:34:38.018 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.Config - [framework:30010103]resource config path is : /
+2024-02-25 22:34:38.019 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.Config - [framework:30010104]user config path is : C:/Users/Mikko
+2024-02-25 22:34:38.032 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.Config - [framework:30010105]config load end
+2024-02-25 22:34:38.035 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.BasicDocumentation - [framework:30020101]documentation load start
+2024-02-25 22:34:38.035 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.reader.SystemDocReader - [framework:30020102]system documentation path: /documentation/UNIVERSE/
+2024-02-25 22:34:38.040 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.reader.ProjectDocReader - [framework:30020103]project documentation brief file: C:\xampp\htdocs\inbetween\.rmv\documentation\UNIVERSE\custom.json
+2024-02-25 22:34:38.041 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.reader.UserDocReader - [framework:30020104]user documentation brief file: C:\Users\Mikko\documentation\UNIVERSE\custom.json
+2024-02-25 22:34:38.124 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.BasicDocumentation - [framework:30020105]documentation load end
+2024-02-25 22:34:38.138 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030101]convertors for folder(C:/xampp/htdocs/inbetween) load start
+2024-02-25 22:34:38.157 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030102]comment convertor load finish
+2024-02-25 22:34:38.285 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030103]keyword convertor load finish
+2024-02-25 22:34:38.292 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030104]operator convertor load finish
+2024-02-25 22:34:38.292 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030105]function name convertor load finish
+2024-02-25 22:34:38.293 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030106]atVariable convertor load finish
+2024-02-25 22:34:38.293 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030107]convertors for folder(C:/xampp/htdocs/inbetween) load end
+2024-02-25 22:34:38.294 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.config.CapabilityConfig - [framework:30010301]capabilities file(C:/xampp/htdocs/inbetween/config/capability) doesn't exist or read error, default config will take effect
+2024-02-25 22:34:38.295 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.workspace.WorkspaceManager - [workspace:200105]load all workspace folders successful
+2024-02-25 22:34:38.296 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.AccountManager - [client:40010101]load account manager start
+2024-02-25 22:34:38.305 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.handler.CacheAccountHandler - [client:40010102]load cache account: 
+2024-02-25 22:34:38.306 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.handler.ExternalAccountHandler - [client:40010103]load external account: 
+2024-02-25 22:34:38.312 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.handler.ServerAccountHandler - [client:40010104]load server account: 
+2024-02-25 22:34:38.312 [pool-3-thread-1] INFO  com.rs.mv.mvvs.client.account.AccountManager - [client:40010105]load account manager finish
+2024-02-25 22:34:38.312 [pool-3-thread-1] INFO  com.rs.mv.mvvs.instance.userspace.UserspaceManager - [framework:30010402]config file(C:\Users\Mikko/.rmv/config) watcher launch successful
+2024-02-25 22:35:14.814 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.BasicDocumentation - [framework:30020201]project documentation update start
+2024-02-25 22:35:14.815 [pool-3-thread-1] INFO  com.rs.mv.mvvs.rmv.documentation.BasicDocumentation - [framework:30020202]project documentation update end
+2024-02-25 22:35:14.816 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030201]convertors for folder(C:/xampp/htdocs/inbetween) reload start
+2024-02-25 22:35:14.816 [pool-3-thread-1] INFO  com.rs.mv.mvvs.common.convertor.ConvertorManager - [framework:30030202]convertors for folder(C:/xampp/htdocs/inbetween) load end

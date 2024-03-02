@@ -1,0 +1,283 @@
+@font-face {
+    font-family: "Quinque";
+    src: url('Quinquefive-ALoRM.ttf') format('truetype'); /* Use 'truetype' instead of 'opentype' */
+}
+
+.loading-message {
+  width: 60px;
+  height: 150px;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's above other content */
+  transition: opacity 0.5s ease;
+  opacity: 1; /* Initially visible */
+}
+
+.loading-message {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Hide loading screen when opacity is 0 */
+.loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks on elements beneath */
+}
+
+.hidden {
+    display: none;
+}
+
+.hiddenmiddle {
+    display: none;
+
+}
+
+body {
+    font-family: "Quinque", sans-serif; /* Apply the Quinque font to the entire document */
+    background-image: url('hell.gif');
+    background-size: cover;
+
+
+}
+
+.higher{
+  margin-left: -80px;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  margin-top: -50px;
+  display: grid; /* Convert container to grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 20px; /* Gap between grid items */
+  
+}
+
+.leftnumber {
+  background-image: url(hell-mob.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  z-index: 1111;
+  display: flex;
+  flex-direction: column;
+  line-height: 330px;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  right: 270px;
+  top: 100px;
+}
+
+.rightnumber {
+  background-image: url(hell-mob.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  width: 200px;
+  height: 250px;
+  z-index: 1111;
+  display: flex;
+  flex-direction: column;
+  line-height: 330px;
+  align-items: center;
+  color: white;
+  font-size: 45px;
+  left: 350px;
+  bottom: 170px;
+  margin-bottom: -100px;
+}
+
+
+
+.middle {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  background-image: url(hell-mob.gif);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1111;
+  display: flex;
+  flex-direction: column;
+  line-height: 330px;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  bottom: 375px;
+  left: 280px;
+}
+
+
+.comic-button {
+  width: 115px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #dccd46;
+    background-color: #f03535;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    
+}
+  
+  .comic-button:hover {
+    background-color: #fff;
+    color: #d56c3c;
+    border: 2px solid #dc1f1f;
+    box-shadow: 5px 5px 0px #db4e4e;
+    
+  }
+  
+  .comic-button:active {
+    background-color: #d2cd48;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+
+  #nextRoundBtn{
+    margin-left: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #dccd46;
+    background-color: #f03535;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#nextRoundBtn:hover{
+    background-color: #fff;
+    color: #acffa1;
+    border: 2px solid #aaf78e;
+    box-shadow: 5px 5px 0px #9aff8f;
+}
+
+#nextRoundBtn:active{
+    background-color: #d2cd48;
+    box-shadow: none;
+    transform: translateY(4px);
+}
+
+.see-results-button{
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #dccd46;
+  background-color: #f03535;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.see-results-button:hover{
+  background-color: #fff;
+  color: #acffa1;
+  border: 2px solid #aaf78e;
+  box-shadow: 5px 5px 0px #9aff8f;
+}
+
+.see-results-button:active{
+  background-color: #d2cd48;
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.see-results-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -420px; /* Adjust this value as needed */
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+  margin-right: 40px;
+}
+
+.button-container2 {
+display: flex;
+justify-content: center;
+margin-top: 20px; /* Adjust as needed */
+margin-right: -60px;
+}
+
+
+.button-container button {
+  margin: 0 20px; /* Adjust spacing between buttons */
+}
+
+.button-container2 button {
+  margin: 0 20px; /* Adjust spacing between buttons */
+}
+
+.info-container {
+  display: flex;
+  margin-left: -20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid black;
+
+}
+
+#points,
+#round {
+  margin-right: -5px;
+}
+
+.points,
+.round {
+  margin-left: 10px;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: rgb(81, 0, 0);
+    color: white;
+    padding: -10px;
+    position: absolute; /* Position the footer absolutely */
+    width: 100%; /* Occupy full width */
+    bottom: 0; /* Position at the bottom */
+    margin-left: -10px;
+}

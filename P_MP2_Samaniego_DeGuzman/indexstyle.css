@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Quinque";
+    src: url('Quinquefive-ALoRM.ttf') format('truetype'); /* Use 'truetype' instead of 'opentype' */
+}
+
+h5{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+body {
+    font-family: "Quinque", sans-serif;
+    background-image: url('terraria.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 80px;
+    text-align: center; /* Center align content */
+}
+
+.logo {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative; /* Position the logo absolutely */
+    top: -110px; /* Align to the top */
+    transform: translateX(-50%); /* Adjust to center perfectly */
+    
+    /* Breathing animation */
+    animation: breathe 1s infinite ease-in-out; /* Adjust duration and timing function as needed */
+}
+
+@keyframes breathe {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); } /* Adjust the scale factor for inhale */
+    100% { transform: scale(1); }
+}
+
+#container {
+    opacity: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: -40px;
+
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background-color: #3e9bff;
+}
+
+.loading-message {
+    width: 60px;
+    height: 150px;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other content */
+    transition: opacity 0.5s ease;
+    opacity: 1; /* Initially visible */
+}
+
+.loading-message {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Hide loading screen when opacity is 0 */
+.loading-overlay.hidden {
+    opacity: 0;
+    pointer-events: none; /* Prevent clicks on elements beneath */
+}
+
+.comic-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: "Quinque", sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #d4dc46;
+    background-color: #63c176;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.comic-button:hover {
+    background-color: #fff;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 0px #fff;
+}
+
+.comic-button:active {
+    background-color: #d2cd48;
+    box-shadow: none;
+    transform: translateY(4px);
+}
